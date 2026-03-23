@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Animated Gradient Background */
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #0f172a, #1e293b, #38bdf8, #0ea5e9);
+  animation: moveBg 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(-25%, -25%); }
+  100% { transform: translate(0,0); }
+}
+
+/* Layout */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  height: 100vh;
+}
+
+/* Text */
+.content {
+  max-width: 500px;
+}
+
+.glow {
+  font-size: 60px;
+  color: #38bdf8;
+  text-shadow: 0 0 20px #38bdf8, 0 0 40px #38bdf8;
+}
+
+.content h2 {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.content span {
+  color: #38bdf8;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons a {
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #38bdf8;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+/* Image */
+.image img {
+  width: 350px;
+  border-radius: 20px;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(56,189,248,0.5);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
