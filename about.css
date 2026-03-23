@@ -1,0 +1,70 @@
+body {
+  margin-left: 5pc;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: #fff;
+  height: 50pc;
+  width: 70pc;
+  border-style: dashed;
+  border-radius: 10pc;
+
+}
+
+.about {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  margin-bottom: 10px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #1e293b;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.cta a {
+  text-decoration: none;
+  background: #38bdf8;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background: #0ea5e9;
+}
